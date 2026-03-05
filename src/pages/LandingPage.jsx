@@ -1021,8 +1021,8 @@ function MapSection({ pengcabList, selectedPengcab, setSelectedPengcab }) {
   const markers = useMemo(() => {
     const items = [{
       id: 'pengda', type: 'pengda', name: 'Pengda FORBASI Kalimantan Barat',
-      kota: 'Kota Bandung', coords: PENGDA_CENTER,
-      data: { ketua: 'Pengurus Daerah', alamat: 'Jl. Asia Afrika No. 65, Bandung', phone: '-', email: '-' }
+      kota: 'Kota Pontianak', coords: PENGDA_CENTER,
+      data: { ketua: 'Pengurus Daerah', alamat: 'Jl. Veteran No. 1, Pontianak', phone: '-', email: '-' }
     }];
     pengcabList.forEach(p => {
       const coords = getCoords(p.kota);
@@ -1267,9 +1267,9 @@ function LeafletMap({ MC, markers, selectedPengcab, setSelectedPengcab }) {
   return (
     <MapContainer
       ref={mapRef}
-      center={[-6.9, 107.55]}
-      zoom={8}
-      minZoom={8}
+      center={PENGDA_CENTER}
+      zoom={7}
+      minZoom={6}
       maxZoom={12}
       className="w-full h-full"
       scrollWheelZoom={true}
@@ -1698,7 +1698,7 @@ function StrukturSection({ pengcabList, config, strukturList }) {
                     { role: 'Ketua Umum', name: config.org_ketua || 'Pengda FORBASI Kalbar' },
                     { role: 'Sekretaris', name: config.org_sekretaris || '-' },
                     { role: 'Bendahara', name: config.org_bendahara || '-' },
-                    { role: 'Alamat', name: config.contact_address || 'Jl. Asia Afrika No. 65, Bandung' },
+                    { role: 'Alamat', name: config.contact_address || 'Jl. Veteran No. 1, Pontianak' },
                   ].map((item, i) => (
                     <div key={i} className="bg-white/[0.04] backdrop-blur-sm rounded-2xl p-5 border border-white/[0.06]">
                       <div className="text-[11px] text-green-700/60 font-medium uppercase tracking-wider mb-1">{item.role}</div>
@@ -1955,7 +1955,7 @@ function FeedbackSection({ form, setForm, sent, sending, onSubmit, config }) {
                 {[
                   { icon: HiMail, text: config.contact_email || 'pengda.kalbar@forbasi.or.id' },
                   { icon: HiPhone, text: config.contact_phone || '+62 812-xxxx-xxxx' },
-                  { icon: HiLocationMarker, text: config.contact_address || 'Jl. Asia Afrika No. 65, Bandung' },
+                  { icon: HiLocationMarker, text: config.contact_address || 'Jl. Veteran No. 1, Pontianak' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3 text-gray-500">
                     <div className="w-10 h-10 rounded-xl bg-gray-50 flex items-center justify-center shrink-0"><item.icon className="text-gray-400" size={18} /></div>
