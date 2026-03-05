@@ -72,13 +72,10 @@ const KOTA_KABUPATEN = [
   'Kota Jakarta Timur', 'Kota Jakarta Utara', 'Kab. Kepulauan Seribu',
 
   // ── Kalimantan Barat ──
-  'Kab. Bandung', 'Kab. Bandung Barat', 'Kab. Bekasi', 'Kab. Bogor',
-  'Kab. Ciamis', 'Kab. Cianjur', 'Kab. Cirebon', 'Kab. Garut',
-  'Kab. Indramayu', 'Kab. Karawang', 'Kab. Kuningan', 'Kab. Majalengka',
-  'Kab. Pangandaran', 'Kab. Purwakarta', 'Kab. Subang', 'Kab. Sukabumi',
-  'Kab. Sumedang', 'Kab. Tasikmalaya', 'Kota Bandung', 'Kota Banjar',
-  'Kota Bekasi', 'Kota Bogor', 'Kota Cimahi', 'Kota Cirebon',
-  'Kota Depok', 'Kota Sukabumi', 'Kota Tasikmalaya',
+  'Kab. Bengkayang', 'Kab. Kapuas Hulu', 'Kab. Kayong Utara', 'Kab. Ketapang',
+  'Kab. Kubu Raya', 'Kab. Landak', 'Kab. Melawi', 'Kab. Mempawah',
+  'Kab. Sambas', 'Kab. Sanggau', 'Kab. Sekadau', 'Kab. Sintang',
+  'Kota Pontianak', 'Kota Singkawang',
 
   // ── Jawa Tengah ──
   'Kab. Banjarnegara', 'Kab. Banyumas', 'Kab. Batang', 'Kab. Blora',

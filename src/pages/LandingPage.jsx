@@ -13,62 +13,42 @@ import { useAuth } from '../context/AuthContext';
 
 // ── Kalimantan Barat City Coordinates ──
 const KALBAR_COORDS = {
-  'Kota Bandung': [-6.9175, 107.6191],
-  'Bandung': [-6.9175, 107.6191],
-  'Kabupaten Bandung': [-7.0227, 107.5232],
-  'Bandung Barat': [-6.8383, 107.4616],
-  'Kabupaten Bandung Barat': [-6.8383, 107.4616],
-  'Kota Cimahi': [-6.8722, 107.5422],
-  'Cimahi': [-6.8722, 107.5422],
-  'Kabupaten Sumedang': [-6.8544, 107.9193],
-  'Sumedang': [-6.8544, 107.9193],
-  'Kabupaten Garut': [-7.2225, 107.9089],
-  'Garut': [-7.2225, 107.9089],
-  'Kabupaten Tasikmalaya': [-7.3269, 108.2118],
-  'Tasikmalaya': [-7.3269, 108.2118],
-  'Kota Tasikmalaya': [-7.3506, 108.2172],
-  'Kabupaten Ciamis': [-7.3295, 108.3517],
-  'Ciamis': [-7.3295, 108.3517],
-  'Kota Banjar': [-7.3700, 108.5341],
-  'Banjar': [-7.3700, 108.5341],
-  'Kabupaten Pangandaran': [-7.6809, 108.6513],
-  'Pangandaran': [-7.6809, 108.6513],
-  'Kabupaten Majalengka': [-6.8371, 108.2270],
-  'Majalengka': [-6.8371, 108.2270],
-  'Kabupaten Kuningan': [-6.9810, 108.4845],
-  'Kuningan': [-6.9810, 108.4845],
-  'Kabupaten Cirebon': [-6.7066, 108.5573],
-  'Kota Cirebon': [-6.7320, 108.5523],
-  'Cirebon': [-6.7320, 108.5523],
-  'Kabupaten Indramayu': [-6.3278, 108.3200],
-  'Indramayu': [-6.3278, 108.3200],
-  'Kabupaten Subang': [-6.5713, 107.7524],
-  'Subang': [-6.5713, 107.7524],
-  'Kabupaten Purwakarta': [-6.5558, 107.4338],
-  'Purwakarta': [-6.5558, 107.4338],
-  'Kabupaten Karawang': [-6.3227, 107.3376],
-  'Karawang': [-6.3227, 107.3376],
-  'Kabupaten Bekasi': [-6.2383, 107.1560],
-  'Kota Bekasi': [-6.2383, 106.9756],
-  'Bekasi': [-6.2383, 106.9756],
-  'Kota Depok': [-6.4025, 106.7942],
-  'Depok': [-6.4025, 106.7942],
-  'Kota Bogor': [-6.5971, 106.8060],
-  'Bogor': [-6.5971, 106.8060],
-  'Kabupaten Bogor': [-6.6499, 106.8284],
-  'Kabupaten Sukabumi': [-6.9277, 106.9300],
-  'Kota Sukabumi': [-6.9220, 106.9274],
-  'Sukabumi': [-6.9220, 106.9274],
-  'Kabupaten Cianjur': [-6.8170, 107.1425],
-  'Cianjur': [-6.8170, 107.1425],
+  'Kota Pontianak': [-0.0263, 109.3425],
+  'Pontianak': [-0.0263, 109.3425],
+  'Kota Singkawang': [0.9048, 108.9872],
+  'Singkawang': [0.9048, 108.9872],
+  'Kabupaten Bengkayang': [0.8333, 109.5833],
+  'Bengkayang': [0.8333, 109.5833],
+  'Kabupaten Kapuas Hulu': [0.9167, 112.9333],
+  'Kapuas Hulu': [0.9167, 112.9333],
+  'Kabupaten Kayong Utara': [-1.5167, 109.9500],
+  'Kayong Utara': [-1.5167, 109.9500],
+  'Kabupaten Ketapang': [-1.8333, 109.9833],
+  'Ketapang': [-1.8333, 109.9833],
+  'Kabupaten Kubu Raya': [-0.1833, 109.4167],
+  'Kubu Raya': [-0.1833, 109.4167],
+  'Kabupaten Landak': [0.3000, 109.7500],
+  'Landak': [0.3000, 109.7500],
+  'Kabupaten Melawi': [-0.2833, 111.4500],
+  'Melawi': [-0.2833, 111.4500],
+  'Kabupaten Mempawah': [0.3500, 109.0833],
+  'Mempawah': [0.3500, 109.0833],
+  'Kabupaten Sambas': [1.3500, 109.3000],
+  'Sambas': [1.3500, 109.3000],
+  'Kabupaten Sanggau': [0.1333, 110.6000],
+  'Sanggau': [0.1333, 110.6000],
+  'Kabupaten Sekadau': [0.0333, 110.8500],
+  'Sekadau': [0.0333, 110.8500],
+  'Kabupaten Sintang': [0.0667, 111.5000],
+  'Sintang': [0.0667, 111.5000],
 };
 
-const PENGDA_CENTER = [-6.9175, 107.6191];
+const PENGDA_CENTER = [-0.0263, 109.3425]; // Pontianak
 
 // Kalimantan Barat geographical bounds (SW and NE corners)
 const KALBAR_BOUNDS = [
-  [-7.82, 106.35],  // Southwest corner
-  [-5.85, 108.85]   // Northeast corner
+  [-3.10, 108.40],  // Southwest corner
+  [2.10, 114.00]    // Northeast corner
 ];
 
 function getCoords(kota) {
